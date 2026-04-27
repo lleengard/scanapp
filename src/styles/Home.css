@@ -1,0 +1,308 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  gap: 40px;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-left h1 {
+  font-family: "Ferry", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background: #5970ff;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-right img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.why {
+  margin-top: 110px;
+}
+
+.why h2 {
+  font-family: "Ferry";
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.why-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.why-cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  flex: 1;
+}
+
+.card {
+  min-width: calc((100% - 40px) / 3);
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card img {
+  width: 60px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* TARIFFS */
+
+.tariffs {
+  margin: 80px auto;
+}
+
+.tariffs-list {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.tariff {
+  max-width: 380px;
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.tariff-top {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tariff-top img {
+  width: 60px;
+}
+
+.tariff-beginner .tariff-top {
+  background: #ffb64f;
+}
+
+.tariff-pro .tariff-top {
+  background: #7ce3e1;
+}
+
+.tariff-business .tariff-top {
+  background: black;
+  color: white;
+}
+
+.tariff-business .tariff-body {
+  background: white;
+  color: black;
+}
+
+.badge {
+  background: #3ba5e0;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.tariff-price {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.tariff-limit {
+  font-size: 14px;
+  color: #666;
+}
+
+.tariff-btn {
+  margin-top: auto;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #029491;
+  color: white;
+  cursor: pointer;
+}
+
+.active-btn {
+  background: #d2d2d2;
+  color: black;
+}
+
+.tariff-business {
+  background: black;
+  color: white;
+}
+
+.tariff-business .tariff-btn {
+  background: white;
+  color: black;
+}
+
+.tariffs-list {
+  align-items: stretch;
+}
+
+.tariff {
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff-body {
+  padding: 30px;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-right img {
+    max-width: 300px;
+  }
+
+  .why-cards {
+    overflow-x: auto;
+  }
+
+  .card {
+    min-width: 250px;
+  }
+
+  .tariffs-list {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.arrow {
+  font-size: 30px;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .hero-right img {
+    max-width: 280px;
+  }
+
+  /* WHY */
+  .why h2 {
+    font-size: 28px;
+  }
+
+  .why-wrapper {
+    gap: 10px;
+  }
+
+  .why-cards {
+    overflow-x: auto;
+  }
+
+  .card {
+    min-width: 260px;
+    padding: 20px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .spacer img {
+    width: 100%;
+  }
+
+  .tariffs h2 {
+    font-size: 28px;
+  }
+
+  .tariffs-list {
+    flex-direction: column;
+  }
+
+  .tariff {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,177 @@
+.login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+  gap: 60px;
+}
+
+.login-left {
+  max-width: 500px;
+}
+
+.login-left h1 {
+  font-family: "Ferry", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.login-left img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-right {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 380px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-right h2 {
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.login-form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #5970ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.restore {
+  font-size: 14px;
+  color: #5970ff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-social {
+  margin-top: 30px;
+}
+
+.login-social p {
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.google {
+  background: #ea4335;
+  color: white;
+}
+
+.facebook {
+  background: #1877f2;
+  color: white;
+}
+
+.yandex {
+  background: #ffcc00;
+}
+.login-form button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.auth-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.auth-tabs button {
+  flex: 1;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.auth-tabs .active {
+  border-bottom: 2px solid #029491;
+  color: #029491;
+}
+
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-right {
+    width: 100%;
+  }
+
+  .login-left img {
+    margin: 0 auto;
+  }
+}
+
+.login-social {
+  margin-top: 25px;
+}
+
+.login-social p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  flex: 1;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* цвета (примерно как в макете) */
+.google {
+  color: #ea4335;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.yandex {
+  color: #ff0000;
+}

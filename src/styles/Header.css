@@ -1,0 +1,67 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-center a {
+  color: #000;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.register {
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: #7ce3e1;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    grid-template-columns: 1fr auto;
+  }
+
+  .header-center {
+    display: none; /* меню прячем */
+  }
+
+  .header-right {
+    gap: 10px;
+  }
+
+  .register {
+    display: none; /* как в макете */
+  }
+
+  .login-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
